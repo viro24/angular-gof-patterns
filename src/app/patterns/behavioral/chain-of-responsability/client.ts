@@ -3,7 +3,7 @@ import { ConcreteHandler2 } from './concrete-handler2';
 import { ConcreteHandler3 } from './concrete-handler3';
 
 export class Client {
-  public handleRequest(process: string): void {
+  public handleRequest(action: string): void {
     let concreteHandler1 = new ConcreteHandler1();
     let concreteHandler2 = new ConcreteHandler2();
     let concreteHandler3 = new ConcreteHandler3();
@@ -12,9 +12,9 @@ export class Client {
     concreteHandler2.setSuccessor(concreteHandler3);
 
     try {
-      concreteHandler1.handleRequest(process);
+      concreteHandler1.handleRequest(action);
     } catch (e) {
-      console.log('Can not trigger Handler ' + process);
+      console.log('Can not trigger Handler ' + action);
       console.log(e);
     }
   }

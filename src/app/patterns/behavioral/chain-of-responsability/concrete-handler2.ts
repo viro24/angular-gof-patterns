@@ -1,11 +1,11 @@
 import { Handler } from './handler';
 
 export class ConcreteHandler2 extends Handler {
-  public handleRequest(process: string): void {
-    if (process === 'load') {
-      console.log('Process "load" resolve to Handler-2');
+  public handleRequest(action: string): void {
+    if (action === 'load') {
+      console.log('action "load" resolve to Handler-2');
     } else {
-      this.successor.handleRequest(process);
+      this.successor.handleRequest(action);
     }
   }
 }

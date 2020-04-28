@@ -9,6 +9,15 @@ const routes: Routes = [
       import('./patterns/behavioral/chain-of-responsability/chain-of-responsability.module').then(
         module => module.ChainOfResponsabilityModule
       )
+  },
+  {
+    path: 'command',
+    loadChildren: () => import('./patterns/behavioral/command/command.module').then(module => module.CommandModule)
+  },
+  {
+    path: '',
+    redirectTo: '',
+    pathMatch: 'full'
   }
 ];
 

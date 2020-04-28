@@ -5,5 +5,5 @@ export abstract class Handler {
     this.successor = handler;
   }
 
-  public abstract handleRequest(process: string): void;
+  public abstract handleRequest(action: string): void;
 }
