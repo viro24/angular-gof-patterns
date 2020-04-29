@@ -10,8 +10,8 @@ export class ConcreteAggregate implements Aggregate {
     this.countryItem = countryItem;
   }
 
-  addItem(name: string): void {
-    this.collectionItems.push(new Item(name, this.countryItem));
+  addItem(nameItem: string): void {
+    this.collectionItems.push(new Item(nameItem, this.countryItem));
   }
 
   createIterator(): ConcreteIterator {

@@ -7,7 +7,7 @@ import { Client } from './client';
 })
 export class IteratorComponent implements OnInit {
   constructor() {
-    let client: Client = new Client();
+    let client = new Client();
   }
 
   ngOnInit(): void {}

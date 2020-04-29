@@ -20,6 +20,10 @@ const routes: Routes = [
   {
     path: 'iterator',
     loadChildren: () => import('./patterns/behavioral/iterator/iterator.module').then(module => module.IteratorModule)
+  },
+  {
+    path: 'mediator',
+    loadChildren: () => import('./patterns/behavioral/mediator/mediator.module').then(module => module.MediatorModule)
   }
 ];
 
