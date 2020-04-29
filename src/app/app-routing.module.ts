@@ -16,6 +16,10 @@ const routes: Routes = [
   {
     path: 'interpreter',
     loadChildren: () => import('./patterns/behavioral/interpreter/interpreter.module').then(module => module.InterpreterModule)
+  },
+  {
+    path: 'iterator',
+    loadChildren: () => import('./patterns/behavioral/iterator/iterator.module').then(module => module.IteratorModule)
   }
 ];
 
