@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AppComponent } from './app.component';
 
 const routes: Routes = [
   {
@@ -15,9 +14,8 @@ const routes: Routes = [
     loadChildren: () => import('./patterns/behavioral/command/command.module').then(module => module.CommandModule)
   },
   {
-    path: '',
-    redirectTo: '',
-    pathMatch: 'full'
+    path: 'interpreter',
+    loadChildren: () => import('./patterns/behavioral/interpreter/interpreter.module').then(module => module.InterpreterModule)
   }
 ];
 
