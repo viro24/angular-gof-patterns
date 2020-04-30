@@ -28,6 +28,10 @@ const routes: Routes = [
   {
     path: 'memento',
     loadChildren: () => import('./patterns/behavioral/memento/memento.module').then(module => module.MementoModule)
+  },
+  {
+    path: 'observer',
+    loadChildren: () => import('./patterns/behavioral/observer/observer.module').then(module => module.ObserverModule)
   }
 ];
 
