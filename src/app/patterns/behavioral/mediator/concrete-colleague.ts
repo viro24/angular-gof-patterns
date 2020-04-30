@@ -9,11 +9,11 @@ export class ConcreteColleague implements Colleague {
     this.mediator = mediator;
   }
 
-  getName() {
+  getName(): string {
     return this.nameColleague;
   }
 
-  setName(nameColleague: string) {
+  setName(nameColleague: string): void {
     this.nameColleague = nameColleague;
   }
 

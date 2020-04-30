@@ -24,6 +24,10 @@ const routes: Routes = [
   {
     path: 'mediator',
     loadChildren: () => import('./patterns/behavioral/mediator/mediator.module').then(module => module.MediatorModule)
+  },
+  {
+    path: 'memento',
+    loadChildren: () => import('./patterns/behavioral/memento/memento.module').then(module => module.MementoModule)
   }
 ];
 
