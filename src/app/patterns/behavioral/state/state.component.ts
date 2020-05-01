@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ConcreteState1 } from './concrete-state-1';
+import { ConcreteState2 } from './concrete-state-2';
 import { Context } from './context';
-import { State1 } from './state-1';
-import { State2 } from './state-2';
 
 @Component({
   selector: 'gof-state',
@@ -9,10 +9,10 @@ import { State2 } from './state-2';
 })
 export class StateComponent implements OnInit {
   constructor() {
-    let state1: State1 = new State1();
-    let state2: State2 = new State2();
+    let state1 = new ConcreteState1();
+    let state2 = new ConcreteState2();
 
-    let context: Context = new Context();
+    let context = new Context();
 
     context.setState(state1);
     context.request();

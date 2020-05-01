@@ -1,6 +1,6 @@
 ## UML
 
-[Diagramas UML](https://spicolhotra.tk/lifestyle/gang-of-four-design-patterns-for-java-pdf.php)
+[Diagramas UML](http://www.mcdonaldland.info/files/designpatterns/designpatternscard.pdf)
 
 ## 23 GOF
 

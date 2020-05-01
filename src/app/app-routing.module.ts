@@ -36,6 +36,10 @@ const routes: Routes = [
   {
     path: 'state',
     loadChildren: () => import('./patterns/behavioral/state/state.module').then(module => module.StateModule)
+  },
+  {
+    path: 'strategy',
+    loadChildren: () => import('./patterns/behavioral/strategy/strategy.module').then(module => module.StrategyModule)
   }
 ];
 
