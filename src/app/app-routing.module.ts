@@ -49,6 +49,10 @@ const routes: Routes = [
   {
     path: 'visitor',
     loadChildren: () => import('./patterns/behavioral/visitor/visitor.module').then(module => module.VisitorModule)
+  },
+  {
+    path: 'adapter',
+    loadChildren: () => import('./patterns/structural/adapter/adapter.module').then(module => module.AdapterModule)
   }
 ];
 
