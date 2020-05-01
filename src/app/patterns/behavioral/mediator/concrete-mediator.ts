@@ -16,7 +16,7 @@ export class ConcreteMediator implements Mediator {
       let colleagueFind = this.collectionColleague.find(colleague => colleague.getName() === to);
       colleagueFind.receiverMessage(from, message);
     } else {
-      console.log('No exist!');
+      console.log('No Exist!');
     }
   }
 }

@@ -14,8 +14,8 @@ export class Client {
     try {
       concreteHandler1.handleRequest(action);
     } catch (e) {
-      console.log('Can not trigger Handler ' + action);
-      console.log(e);
+      console.log('Can Not Trigger Handler ' + action);
+      // console.log(e);
     }
   }
 }

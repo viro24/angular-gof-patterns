@@ -3,6 +3,6 @@ import { Strategy } from './strategy';
 
 export class ConcreteStrategy1 implements Strategy {
   public execute(element: Element): string {
-    return element.getName() + ' execute Strategy 1';
+    return element.getName() + ' Execute Strategy-1';
   }
 }

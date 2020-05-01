@@ -11,8 +11,8 @@ import { Element } from './element';
 })
 export class StrategyComponent implements OnInit {
   constructor() {
-    let element1 = new Element('Element1');
-    let element2 = new Element('Element2');
+    let element1 = new Element('Element-1');
+    let element2 = new Element('Element-2');
 
     let concreteStrategy1 = new ConcreteStrategy1();
     let concreteStrategy2 = new ConcreteStrategy2();

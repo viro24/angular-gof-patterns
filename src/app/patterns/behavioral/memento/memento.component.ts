@@ -11,14 +11,14 @@ export class MementoComponent implements OnInit {
     let caretaker: Caretaker = new Caretaker();
 
     let originator: Originator = new Originator();
-    originator.setName('State 1');
-    originator.setName('State 2');
+    originator.setName('State-1');
+    originator.setName('State-2');
 
     caretaker.addMemento(originator.saveToMemento());
-    originator.setName('State 3');
+    originator.setName('State-3');
 
     caretaker.addMemento(originator.saveToMemento());
-    originator.setName('State 4');
+    originator.setName('State-4');
 
     let memento_0 = caretaker.getMemento(0);
     let memento_1 = caretaker.getMemento(1);

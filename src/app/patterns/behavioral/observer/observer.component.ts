@@ -20,16 +20,16 @@ export class ObserverComponent implements OnInit {
     subject.attach(observer2);
     subject.attach(observer3);
 
-    console.log('Notify: Reset system');
-    subject.notify('Reset system');
+    console.log('Notify Reset System');
+    subject.notify('Reset System');
 
-    console.log('End... Now detachs... only 1 observable');
+    console.log('End... Now Detachs... Only 1 Observable');
 
     subject.detach(observer1);
     subject.detach(observer2);
 
-    console.log('Notify: End program');
-    subject.notify('End program');
+    console.log('Notify End Program');
+    subject.notify('End Program');
   }
 
   ngOnInit(): void {}

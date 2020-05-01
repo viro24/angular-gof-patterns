@@ -22,6 +22,6 @@ export class ConcreteColleague implements Colleague {
   }
 
   receiverMessage(from: string, message: string): void {
-    console.log('The colleage "' + from + '" says ' + message);
+    console.log('The Colleage ' + from + ' Says ' + message);
   }
 }

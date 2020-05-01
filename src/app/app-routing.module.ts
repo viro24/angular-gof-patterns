@@ -40,6 +40,11 @@ const routes: Routes = [
   {
     path: 'strategy',
     loadChildren: () => import('./patterns/behavioral/strategy/strategy.module').then(module => module.StrategyModule)
+  },
+  {
+    path: 'template-method',
+    loadChildren: () =>
+      import('./patterns/behavioral/template-method/template-method.module').then(module => module.TemplateMethodModule)
   }
 ];
 

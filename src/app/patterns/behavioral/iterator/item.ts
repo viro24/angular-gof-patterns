@@ -8,6 +8,6 @@ export class Item {
   }
 
   printNameItem(): void {
-    console.log('My name is ' + this.nameItem + ' from ' + this.countryItem);
+    console.log('My Name Is ' + this.nameItem + ' From ' + this.countryItem);
   }
 }
