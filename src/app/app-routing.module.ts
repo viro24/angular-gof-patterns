@@ -32,6 +32,10 @@ const routes: Routes = [
   {
     path: 'observer',
     loadChildren: () => import('./patterns/behavioral/observer/observer.module').then(module => module.ObserverModule)
+  },
+  {
+    path: 'state',
+    loadChildren: () => import('./patterns/behavioral/state/state.module').then(module => module.StateModule)
   }
 ];
 
