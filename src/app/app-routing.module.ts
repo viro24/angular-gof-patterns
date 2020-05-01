@@ -45,6 +45,10 @@ const routes: Routes = [
     path: 'template-method',
     loadChildren: () =>
       import('./patterns/behavioral/template-method/template-method.module').then(module => module.TemplateMethodModule)
+  },
+  {
+    path: 'visitor',
+    loadChildren: () => import('./patterns/behavioral/visitor/visitor.module').then(module => module.VisitorModule)
   }
 ];
 
