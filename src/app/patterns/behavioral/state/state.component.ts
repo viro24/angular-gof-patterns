@@ -9,6 +9,7 @@ import { Context } from './context';
 })
 export class StateComponent implements OnInit {
   constructor() {
+    console.log('%cState: Adapting Their Behavior Based On Their Internal State', 'color: SpringGreen;');
     let state1 = new ConcreteState1();
     let state2 = new ConcreteState2();
 

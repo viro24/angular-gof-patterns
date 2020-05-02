@@ -7,6 +7,7 @@ import { Client } from './client';
 })
 export class ChainOfResponsabilityComponent implements OnInit {
   constructor() {
+    console.log('%cChain of Responsability: Transmitting To His Successors Until One Of Them Responds', 'color: SpringGreen;');
     console.log('Send 1 Action');
     let client1 = new Client();
     client1.handleRequest('save');

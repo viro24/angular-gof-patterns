@@ -11,6 +11,7 @@ import { Element } from './element';
 })
 export class StrategyComponent implements OnInit {
   constructor() {
+    console.log('%cStrategy: Adapting Behavior', 'color: SpringGreen;');
     let element1 = new Element('Element-1');
     let element2 = new Element('Element-2');
 

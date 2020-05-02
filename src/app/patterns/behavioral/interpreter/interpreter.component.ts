@@ -7,6 +7,7 @@ import { Client } from './client';
 })
 export class InterpreterComponent implements OnInit {
   constructor() {
+    console.log('%cInterpreter: Representing The Grammar Of A Language Using Objects', 'color: SpringGreen;');
     let client = new Client();
   }
 

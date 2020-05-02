@@ -9,6 +9,7 @@ import { ConcreteImplementor } from './concrete-implementor';
 })
 export class BridgeComponent implements OnInit {
   constructor() {
+    console.log('%cBridge: Separating The Conceptual Aspects Of A Hierarchy', 'color: SpringGreen;');
     let concreteImplementor = new ConcreteImplementor();
 
     let concreteAbstract1 = new ConcreteAbstraction1(concreteImplementor);

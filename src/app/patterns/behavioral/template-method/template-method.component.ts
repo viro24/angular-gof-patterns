@@ -9,6 +9,10 @@ import { ConcreteElement3 } from './concrete-element-3';
 })
 export class TemplateMethodComponent implements OnInit {
   constructor() {
+    console.log(
+      '%cTemplate Method: Reporting In The Subclasses Certain Stages Of One Of The Operations Of An Object',
+      'color: SpringGreen;'
+    );
     let concreteElement1 = new ConcreteElement1();
     let concreteElement2 = new ConcreteElement2();
     let concreteElement3 = new ConcreteElement3();

@@ -7,6 +7,7 @@ import { Client } from './client';
 })
 export class CommandComponent implements OnInit {
   constructor() {
+    console.log('%cCommand: Transforming A Request Into An Object', 'color: SpringGreen;');
     let client = new Client();
   }
 

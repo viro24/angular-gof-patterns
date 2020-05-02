@@ -8,7 +8,9 @@ import { Leaf } from './leaf';
 })
 export class CompositeComponent implements OnInit {
   constructor() {
+    console.log('%cComposite: Composing Objects With Depth', 'color: SpringGreen;');
     let folder1 = new Composite('Folder-1');
+
     folder1.addNode(new Leaf('File-1.txt'));
     folder1.addNode(new Leaf('File-2.txt'));
     folder1.addNode(new Leaf('File-3.txt'));

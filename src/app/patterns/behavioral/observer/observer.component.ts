@@ -10,6 +10,7 @@ import { ConcreteSubject } from './concrete-subject';
 })
 export class ObserverComponent implements OnInit {
   constructor() {
+    console.log('%cObserver: Notifying Observers Of Changes', 'color: SpringGreen;');
     let concreteSubject = new ConcreteSubject();
 
     let concreteObserver1: ConcreteObserver1 = new ConcreteObserver1();

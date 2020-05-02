@@ -7,6 +7,7 @@ import { Client } from './client';
 })
 export class IteratorComponent implements OnInit {
   constructor() {
+    console.log('%cIterator: Providing Sequential Access To A Collection', 'color: SpringGreen;');
     let client = new Client();
   }
 
