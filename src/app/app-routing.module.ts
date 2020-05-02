@@ -61,6 +61,10 @@ const routes: Routes = [
   {
     path: 'bridge',
     loadChildren: () => import('./patterns/structural/bridge/bridge.module').then(module => module.BridgeModule)
+  },
+  {
+    path: 'composite',
+    loadChildren: () => import('./patterns/structural/composite/composite.module').then(module => module.CompositeModule)
   }
 ];
 

@@ -8,9 +8,7 @@ import { ConcreteImplementor } from './concrete-implementor';
   template: ''
 })
 export class BridgeComponent implements OnInit {
-  constructor() {}
-
-  ngOnInit(): void {
+  constructor() {
     let concreteImplementor = new ConcreteImplementor();
 
     let concreteAbstract1 = new ConcreteAbstraction1(concreteImplementor);
@@ -22,4 +20,6 @@ export class BridgeComponent implements OnInit {
     console.log('ConcreteAbstract2...');
     concreteAbstract2.print();
   }
+
+  ngOnInit(): void {}
 }
