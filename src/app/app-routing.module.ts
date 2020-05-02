@@ -65,6 +65,10 @@ const routes: Routes = [
   {
     path: 'composite',
     loadChildren: () => import('./patterns/structural/composite/composite.module').then(module => module.CompositeModule)
+  },
+  {
+    path: 'decorator',
+    loadChildren: () => import('./patterns/structural/decorator/decorator.module').then(module => module.DecoratorModule)
   }
 ];
 
