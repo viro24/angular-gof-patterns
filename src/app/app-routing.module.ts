@@ -51,8 +51,16 @@ const routes: Routes = [
     loadChildren: () => import('./patterns/behavioral/visitor/visitor.module').then(module => module.VisitorModule)
   },
   {
-    path: 'adapter',
-    loadChildren: () => import('./patterns/structural/adapter/adapter.module').then(module => module.AdapterModule)
+    path: 'object/adapter',
+    loadChildren: () => import('./patterns/structural/adapter/object/adapter.module').then(module => module.AdapterModule)
+  },
+  {
+    path: 'class/adapter',
+    loadChildren: () => import('./patterns/structural/adapter/class/adapter.module').then(module => module.AdapterModule)
+  },
+  {
+    path: 'bridge',
+    loadChildren: () => import('./patterns/structural/bridge/bridge.module').then(module => module.BridgeModule)
   }
 ];
 

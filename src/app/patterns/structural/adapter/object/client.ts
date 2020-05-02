@@ -1,11 +1,6 @@
-import { Component, OnInit } from '@angular/core';
 import { ConcreteAdapter } from './concrete-adapter';
 
-@Component({
-  selector: 'gof-adapter',
-  template: ''
-})
-export class AdapterComponent implements OnInit {
+export class Client {
   constructor() {
     let adapter = new ConcreteAdapter();
 
@@ -15,6 +10,4 @@ export class AdapterComponent implements OnInit {
 
     adapter.print();
   }
-
-  ngOnInit(): void {}
 }

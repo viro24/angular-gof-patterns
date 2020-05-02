@@ -6,6 +6,6 @@ export class Adaptee {
   }
 
   public printMessage(): void {
-    console.log('%c' + this.message, 'color: yellow;');
+    console.log(this.message);
   }
 }

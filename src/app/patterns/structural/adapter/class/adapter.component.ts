@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { Client } from './client';
 
 @Component({
-  selector: 'gof-visitor',
+  selector: 'gof-adapter-class',
   template: ''
 })
-export class VisitorComponent implements OnInit {
+export class AdapterComponent implements OnInit {
   constructor() {
     let client = new Client();
   }

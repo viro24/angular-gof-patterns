@@ -2,12 +2,12 @@ import { ConcreteAggregate } from './concrete-aggregate';
 
 export class Client {
   constructor() {
-    let country = new ConcreteAggregate('Germany');
-    country.addItem('Element-1');
-    country.addItem('Element-2');
-    country.addItem('Element-3');
+    let concreteAggregate = new ConcreteAggregate('Germany');
+    concreteAggregate.addItem('Element-1');
+    concreteAggregate.addItem('Element-2');
+    concreteAggregate.addItem('Element-3');
 
-    let iterator = country.createIterator();
+    let iterator = concreteAggregate.createIterator();
 
     while (iterator.valid()) {
       let item = iterator.getItem();
