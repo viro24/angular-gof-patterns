@@ -8,7 +8,10 @@ import { Leaf } from './leaf';
 })
 export class CompositeComponent implements OnInit {
   constructor() {
-    console.log('%cComposite: Composing Objects With Depth', 'color: SpringGreen;');
+    console.log(
+      '%cComposite: Compose objects into tree structures to represent part-whole-depth hierarchies. Lets clients treat individual objects and compositions of objects uniformly',
+      'color: SpringGreen;'
+    );
     let folder1 = new Composite('Folder-1');
 
     folder1.addNode(new Leaf('File-1.txt'));

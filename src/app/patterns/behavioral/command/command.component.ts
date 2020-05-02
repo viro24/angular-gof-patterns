@@ -7,7 +7,10 @@ import { Client } from './client';
 })
 export class CommandComponent implements OnInit {
   constructor() {
-    console.log('%cCommand: Transforming A Request Into An Object', 'color: SpringGreen;');
+    console.log(
+      '%cCommand: Encapsulate a request as an object, thereby letting you parameterize clients with different requests, queue or log requests, and support undoable operations',
+      'color: SpringGreen;'
+    );
     let client = new Client();
   }
 

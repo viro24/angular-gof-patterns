@@ -8,7 +8,7 @@ import { Client } from './client';
 export class AdapterComponent implements OnInit {
   constructor() {
     console.log(
-      '%cAdapter Class: Converting The Interface Of An Existing Class To The Expected Interface',
+      "%cAdapter Class: Convert the interface of a class into another interface clients expect. Lets classes work together that couldn't otherwise because of incompatible interfaces",
       'color: SpringGreen;'
     );
     let client = new Client();

@@ -7,7 +7,10 @@ import { Client } from './client';
 })
 export class VisitorComponent implements OnInit {
   constructor() {
-    console.log('%cVisitor: Adding New Operations Without Modifying The Classes Of These Objects', 'color: SpringGreen;');
+    console.log(
+      '%cVisitor: Represent an operation to be performed on the elements of an object structure. Lets you define a new operation without changing the classes of the elements on which it operates',
+      'color: SpringGreen;'
+    );
     let client = new Client();
   }
 

@@ -8,7 +8,10 @@ import { Originator } from './originator';
 })
 export class MementoComponent implements OnInit {
   constructor() {
-    console.log('%cMemento: Safeguarding And Restoring The State Of An Object', 'color: SpringGreen;');
+    console.log(
+      "%cMemento: Without violating encapsulation, capture and externalize an object's internal state so that the object can be restored to this state later",
+      'color: SpringGreen;'
+    );
     let caretaker: Caretaker = new Caretaker();
 
     let originator: Originator = new Originator();

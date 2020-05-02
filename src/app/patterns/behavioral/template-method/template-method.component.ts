@@ -10,7 +10,7 @@ import { ConcreteElement3 } from './concrete-element-3';
 export class TemplateMethodComponent implements OnInit {
   constructor() {
     console.log(
-      '%cTemplate Method: Reporting In The Subclasses Certain Stages Of One Of The Operations Of An Object',
+      "%cTemplate Method: Define the skeleton of an algorithm in an operation, deferring some steps to subclasses. Lets subclasses redefine certain steps of an algorithm without changing the algorithm's structure",
       'color: SpringGreen;'
     );
     let concreteElement1 = new ConcreteElement1();

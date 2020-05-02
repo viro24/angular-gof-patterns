@@ -9,7 +9,10 @@ import { Facade } from './facade';
 })
 export class FacadeComponent implements OnInit {
   constructor() {
-    console.log('%cFacade: Construct A Object Complex', 'color: SpringGreen;');
+    console.log(
+      '%cFacade: Provide a unified interface to a set of interfaces in a subsystem. Defines a high- level interface that makes the subsystem easier to use',
+      'color: SpringGreen;'
+    );
     let facade = new Facade();
 
     facade.attach(new Class1());

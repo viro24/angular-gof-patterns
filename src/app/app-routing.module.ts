@@ -73,6 +73,10 @@ const routes: Routes = [
   {
     path: 'facade',
     loadChildren: () => import('./patterns/structural/facade/facade.module').then(module => module.FacadeModule)
+  },
+  {
+    path: 'flyweight',
+    loadChildren: () => import('./patterns/structural/flyweight/flyweight.module').then(module => module.FlyweightModule)
   }
 ];
 

@@ -8,7 +8,10 @@ import { ConcreteMediator } from './concrete-mediator';
 })
 export class MediatorComponent implements OnInit {
   constructor() {
-    console.log('%cMediator: Managing And Controlling The Interactions Of A Group', 'color: SpringGreen;');
+    console.log(
+      '%cMediator: Define an object that encapsulates how a set of objects interact. Promotes loose coupling by keeping objects from referring to each other explicitly and it lets you vary their interactions independently',
+      'color: SpringGreen;'
+    );
     let mediator = new ConcreteMediator();
 
     let concreteUser1 = new ConcreteColleague(mediator);

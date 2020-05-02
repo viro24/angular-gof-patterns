@@ -7,7 +7,10 @@ import { Client } from './client';
 })
 export class IteratorComponent implements OnInit {
   constructor() {
-    console.log('%cIterator: Providing Sequential Access To A Collection', 'color: SpringGreen;');
+    console.log(
+      '%cIterator: Provide a way to access the elements of an aggregate object sequentially without exposing its underlying representation',
+      'color: SpringGreen;'
+    );
     let client = new Client();
   }
 
