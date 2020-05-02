@@ -69,6 +69,10 @@ const routes: Routes = [
   {
     path: 'decorator',
     loadChildren: () => import('./patterns/structural/decorator/decorator.module').then(module => module.DecoratorModule)
+  },
+  {
+    path: 'facade',
+    loadChildren: () => import('./patterns/structural/facade/facade.module').then(module => module.FacadeModule)
   }
 ];
 
