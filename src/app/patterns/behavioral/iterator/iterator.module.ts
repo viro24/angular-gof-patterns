@@ -6,6 +6,4 @@ import { IteratorRoutingModule } from './iterator-routing.module';
   declarations: [],
   imports: [CommonModule, IteratorRoutingModule]
 })
-export class IteratorModule {
-  constructor() {}
-}
+export class IteratorModule {}

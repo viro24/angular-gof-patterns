@@ -77,6 +77,10 @@ const routes: Routes = [
   {
     path: 'flyweight',
     loadChildren: () => import('./patterns/structural/flyweight/flyweight.module').then(module => module.FlyweightModule)
+  },
+  {
+    path: 'proxy',
+    loadChildren: () => import('./patterns/structural/proxy/proxy.module').then(module => module.ProxyModule)
   }
 ];
 

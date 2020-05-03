@@ -6,6 +6,4 @@ import { AdapterRoutingModule } from './adapter-routing.module';
   declarations: [],
   imports: [CommonModule, AdapterRoutingModule]
 })
-export class AdapterModule {
-  constructor() {}
-}
+export class AdapterModule {}

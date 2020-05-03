@@ -6,6 +6,4 @@ import { StrategyRoutingModule } from './strategy-routing.module';
   declarations: [],
   imports: [CommonModule, StrategyRoutingModule]
 })
-export class StrategyModule {
-  constructor() {}
-}
+export class StrategyModule {}

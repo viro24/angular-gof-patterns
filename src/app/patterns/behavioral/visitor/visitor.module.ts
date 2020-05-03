@@ -6,6 +6,4 @@ import { VisitorRoutingModule } from './visitor-routing.module';
   declarations: [],
   imports: [CommonModule, VisitorRoutingModule]
 })
-export class VisitorModule {
-  constructor() {}
-}
+export class VisitorModule {}

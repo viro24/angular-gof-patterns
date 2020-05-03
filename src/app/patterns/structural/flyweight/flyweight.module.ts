@@ -6,6 +6,4 @@ import { FlyweightRoutingModule } from './flyweight-routing.module';
   declarations: [],
   imports: [CommonModule, FlyweightRoutingModule]
 })
-export class FlyweightModule {
-  constructor() {}
-}
+export class FlyweightModule {}

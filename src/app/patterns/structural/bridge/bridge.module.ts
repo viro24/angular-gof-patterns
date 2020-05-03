@@ -6,6 +6,4 @@ import { BridgeRoutingModule } from './bridge-routing.module';
   declarations: [],
   imports: [CommonModule, BridgeRoutingModule]
 })
-export class BridgeModule {
-  constructor() {}
-}
+export class BridgeModule {}

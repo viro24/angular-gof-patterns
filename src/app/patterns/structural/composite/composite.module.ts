@@ -6,6 +6,4 @@ import { CompositeRoutingModule } from './composite-routing.module';
   declarations: [],
   imports: [CommonModule, CompositeRoutingModule]
 })
-export class CompositeModule {
-  constructor() {}
-}
+export class CompositeModule {}

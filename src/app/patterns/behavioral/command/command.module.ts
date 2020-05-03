@@ -6,6 +6,4 @@ import { CommandRoutingModule } from './command-routing.module';
   declarations: [],
   imports: [CommonModule, CommandRoutingModule]
 })
-export class CommandModule {
-  constructor() {}
-}
+export class CommandModule {}

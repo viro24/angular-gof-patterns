@@ -7,13 +7,13 @@ export class Client {
     let factory = new FlyweightFactory();
 
     let flyweight = factory.getFlyweight(Color.BLACK);
-    flyweight.operation('Flyweight-1X');
+    flyweight.operation('Flyweight-1');
 
     flyweight = factory.getFlyweight(Color.WHITE);
     flyweight.operation('Flyweight-2');
 
     flyweight = factory.getFlyweight(Color.BLACK);
-    flyweight.operation('Already Used Flyweight (Flyweight-1)');
+    flyweight.operation('Already Used Flyweight-1');
 
     let unsharedflyweight = new UnsharedConcreteFlyweight();
     unsharedflyweight.operation('Unshared');

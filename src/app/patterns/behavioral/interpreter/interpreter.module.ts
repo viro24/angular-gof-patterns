@@ -6,6 +6,4 @@ import { InterpreterRoutingModule } from './interpreter-routing.module';
   declarations: [],
   imports: [CommonModule, InterpreterRoutingModule]
 })
-export class InterpreterModule {
-  constructor() {}
-}
+export class InterpreterModule {}

@@ -6,6 +6,4 @@ import { StateRoutingModule } from './state-routing.module';
   declarations: [],
   imports: [CommonModule, StateRoutingModule]
 })
-export class StateModule {
-  constructor() {}
-}
+export class StateModule {}

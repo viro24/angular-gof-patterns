@@ -6,6 +6,4 @@ import { MementoRoutingModule } from './memento-routing.module';
   declarations: [],
   imports: [CommonModule, MementoRoutingModule]
 })
-export class MementoModule {
-  constructor() {}
-}
+export class MementoModule {}

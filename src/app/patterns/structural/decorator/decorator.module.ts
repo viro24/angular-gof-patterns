@@ -6,6 +6,4 @@ import { DecoratorRoutingModule } from './decorator-routing.module';
   declarations: [],
   imports: [CommonModule, DecoratorRoutingModule]
 })
-export class DecoratorModule {
-  constructor() {}
-}
+export class DecoratorModule {}

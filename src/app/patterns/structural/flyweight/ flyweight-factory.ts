@@ -5,10 +5,10 @@ export class FlyweightFactory {
   private cache: Array<{ color: Color; concreteFlyweight: ConcreteFlyweight }> = [];
 
   public getFlyweight(key: Color): ConcreteFlyweight {
-    return this.cache.find(cache => cache.color === key)?.concreteFlyweight || this.add(key);
+    return this.cache.find(cache => cache.color === key)?.concreteFlyweight || this.addFlyweight(key);
   }
 
-  private add(key: Color): ConcreteFlyweight {
+  private addFlyweight(key: Color): ConcreteFlyweight {
     let instanceFlyweight = new ConcreteFlyweight(key);
     this.cache.push({ color: key, concreteFlyweight: instanceFlyweight });
     return instanceFlyweight;

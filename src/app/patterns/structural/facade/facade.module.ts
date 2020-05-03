@@ -6,6 +6,4 @@ import { FacadeRoutingModule } from './facade-routing.module';
   declarations: [],
   imports: [CommonModule, FacadeRoutingModule]
 })
-export class FacadeModule {
-  constructor() {}
-}
+export class FacadeModule {}

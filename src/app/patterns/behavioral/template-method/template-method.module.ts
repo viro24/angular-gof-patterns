@@ -6,6 +6,4 @@ import { TemplateMethodRoutingModule } from './template-method-routing.module';
   declarations: [],
   imports: [CommonModule, TemplateMethodRoutingModule]
 })
-export class TemplateMethodModule {
-  constructor() {}
-}
+export class TemplateMethodModule {}

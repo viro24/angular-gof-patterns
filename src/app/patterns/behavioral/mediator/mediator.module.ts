@@ -6,6 +6,4 @@ import { MediatorRoutingModule } from './mediator-routing.module';
   declarations: [],
   imports: [CommonModule, MediatorRoutingModule]
 })
-export class MediatorModule {
-  constructor() {}
-}
+export class MediatorModule {}

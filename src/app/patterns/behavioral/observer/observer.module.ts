@@ -6,6 +6,4 @@ import { ObserverRoutingModule } from './observer-routing.module';
   declarations: [],
   imports: [CommonModule, ObserverRoutingModule]
 })
-export class ObserverModule {
-  constructor() {}
-}
+export class ObserverModule {}
