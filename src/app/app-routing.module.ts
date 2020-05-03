@@ -81,6 +81,11 @@ const routes: Routes = [
   {
     path: 'proxy',
     loadChildren: () => import('./patterns/structural/proxy/proxy.module').then(module => module.ProxyModule)
+  },
+  {
+    path: 'abstract-factory',
+    loadChildren: () =>
+      import('./patterns/creational/abstract-factory/abstract-factory.module').then(module => module.AbstractFactoryModule)
   }
 ];
 
