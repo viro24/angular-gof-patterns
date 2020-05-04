@@ -90,6 +90,11 @@ const routes: Routes = [
   {
     path: 'builder',
     loadChildren: () => import('./patterns/creational/builder/builder.module').then(module => module.BuilderModule)
+  },
+  {
+    path: 'factory-method',
+    loadChildren: () =>
+      import('./patterns/creational/factory-method/factory-method.module').then(module => module.FactoryMethodModule)
   }
 ];
 

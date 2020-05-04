@@ -1,11 +1,11 @@
 import { Element } from './element';
 
 export class ConcreteElement1 extends Element {
-  protected setName(): string {
+  public setName(): string {
     return 'Element-1';
   }
 
-  protected setPhone(): string {
+  public setPhone(): string {
     return 'XXX-XXX-111';
   }
 }

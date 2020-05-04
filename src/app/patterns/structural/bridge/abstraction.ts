@@ -7,8 +7,6 @@ export abstract class Abstraction {
     this.implementor = implementor;
   }
 
-  public abstract print(): void;
-
   protected printMessageWelcome(): void {
     this.implementor.printMessageWelcome();
   }
@@ -16,4 +14,6 @@ export abstract class Abstraction {
   protected printMessageEnd(): void {
     this.implementor.printMessageEnd();
   }
+
+  public abstract print(): void;
 }
