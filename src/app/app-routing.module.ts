@@ -99,6 +99,16 @@ const routes: Routes = [
   {
     path: 'prototype',
     loadChildren: () => import('./patterns/creational/prototype/prototype.module').then(module => module.PrototypeModule)
+  },
+  {
+    path: 'singleton/default',
+    loadChildren: () =>
+      import('./patterns/creational/singleton/default/singleton.module').then(module => module.SingletonModule)
+  },
+  {
+    path: 'singleton/lazy-initialization',
+    loadChildren: () =>
+      import('./patterns/creational/singleton/lazy-initialization/singleton.module').then(module => module.SingletonModule)
   }
 ];
 
