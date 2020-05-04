@@ -1,6 +1,6 @@
-import { ConcreteHandler1 } from './concrete-handler1';
-import { ConcreteHandler2 } from './concrete-handler2';
-import { ConcreteHandler3 } from './concrete-handler3';
+import { ConcreteHandler1 } from './concrete-handler-1';
+import { ConcreteHandler2 } from './concrete-handler-2';
+import { ConcreteHandler3 } from './concrete-handler-3';
 
 export class Client {
   public handleRequest(action: string): void {

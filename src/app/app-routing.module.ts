@@ -95,6 +95,10 @@ const routes: Routes = [
     path: 'factory-method',
     loadChildren: () =>
       import('./patterns/creational/factory-method/factory-method.module').then(module => module.FactoryMethodModule)
+  },
+  {
+    path: 'prototype',
+    loadChildren: () => import('./patterns/creational/prototype/prototype.module').then(module => module.PrototypeModule)
   }
 ];
 
