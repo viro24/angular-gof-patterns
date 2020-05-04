@@ -86,6 +86,10 @@ const routes: Routes = [
     path: 'abstract-factory',
     loadChildren: () =>
       import('./patterns/creational/abstract-factory/abstract-factory.module').then(module => module.AbstractFactoryModule)
+  },
+  {
+    path: 'builder',
+    loadChildren: () => import('./patterns/creational/builder/builder.module').then(module => module.BuilderModule)
   }
 ];
 
