@@ -1,3 +1,8 @@
+<h1 align="center">
+<img src="https://storage.googleapis.com/assets-production-workshops-de/system/courses/logos/4/original.png" alt="Angular Architecture Patterns" width=60% height="60%" border="0" /><br>
+Angular Architecture Patterns - 23 GOF
+</h1>
+
 ## UML
 
 [Diagramas UML](http://www.mcdonaldland.info/files/designpatterns/designpatternscard.pdf)
