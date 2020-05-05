@@ -4,7 +4,7 @@ import { Class3 } from './class-3';
 import { Class4 } from './class-4';
 import { Class5 } from './class-5';
 
-export class Facade {
+export class Facade<T> {
   private class3: Class3;
   private class4: Class4;
   private class5: Class5;
@@ -23,7 +23,7 @@ export class Facade {
     }
   }
 
-  public constructed() {
+  public constructed(): void {
     console.log('End Of Construction');
   }
 }
