@@ -79,8 +79,12 @@ const routes: Routes = [
     loadChildren: () => import('./patterns/structural/flyweight/flyweight.module').then(module => module.FlyweightModule)
   },
   {
-    path: 'proxy',
-    loadChildren: () => import('./patterns/structural/proxy/proxy.module').then(module => module.ProxyModule)
+    path: 'proxy/default',
+    loadChildren: () => import('./patterns/structural/proxy/default/proxy.module').then(module => module.ProxyModule)
+  },
+  {
+    path: 'proxy/reverse',
+    loadChildren: () => import('./patterns/structural/proxy/reverse/proxy.module').then(module => module.ProxyModule)
   },
   {
     path: 'abstract-factory',
