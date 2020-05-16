@@ -8,7 +8,7 @@ import { Client } from './client';
 export class ProxyComponent implements OnInit {
   constructor() {
     console.log(
-      '%cProxy: Provide a surrogate or placeholder for another object to control access to it',
+      '%cReverse Proxy: Provide a surrogate or placeholder for another object to control access to it, knowing where it is going',
       'color: SpringGreen;'
     );
     let client = new Client('Subject-2');
