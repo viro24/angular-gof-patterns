@@ -1,3 +1,4 @@
+import { Logger } from 'src/app/app.component';
 import { Colleague } from './colleague';
 import { ConcreteMediator } from './concrete-mediator';
 
@@ -22,6 +23,6 @@ export class ConcreteColleague implements Colleague {
   }
 
   receiverMessage(from: string, message: string): void {
-    console.log('The Colleage ' + from + ' Says ' + message);
+    Logger.debug('The Colleage ' + from + ' Says ' + message);
   }
 }

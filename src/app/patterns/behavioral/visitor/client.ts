@@ -1,3 +1,4 @@
+import { Logger } from 'src/app/app.component';
 import { ConcreteElement1 } from './concrete-element-1';
 import { ConcreteElement2 } from './concrete-element-2';
 import { ConcreteElement3 } from './concrete-element-3';
@@ -13,12 +14,12 @@ export class Client {
     let concreteVisitor1 = new ConcreteVisitor1();
     let concreteVisitor2 = new ConcreteVisitor2();
 
-    console.log(
+    Logger.debug(
       concreteElement1.accept(concreteVisitor1) +
         concreteElement2.accept(concreteVisitor1) +
         concreteElement3.accept(concreteVisitor1)
     );
-    console.log(
+    Logger.debug(
       concreteElement1.accept(concreteVisitor2) +
         concreteElement2.accept(concreteVisitor2) +
         concreteElement3.accept(concreteVisitor2)

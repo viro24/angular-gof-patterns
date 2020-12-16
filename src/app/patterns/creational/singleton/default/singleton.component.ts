@@ -1,13 +1,14 @@
 import { Component, OnInit } from '@angular/core';
+import { Logger } from 'src/app/app.component';
 import { Singleton } from './singleton';
 
 @Component({
   selector: 'gof-singleton',
-  template: ''
+  template: '',
 })
 export class SingletonComponent implements OnInit {
   constructor() {
-    console.log(
+    Logger.debug(
       '%cSingleton: Ensure a class only has one instance and provide a global point of access to it',
       'color: SpringGreen;'
     );

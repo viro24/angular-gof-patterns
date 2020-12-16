@@ -1,10 +1,10 @@
 import { Implementor } from './implementor';
-
+import { Logger } from 'src/app/app.component';
 export class ConcreteImplementor implements Implementor {
   public printMessageWelcome(): void {
-    console.log('Welcome! from ConcreteImplemetor-1');
+    Logger.debug('Welcome! from ConcreteImplemetor-1');
   }
   public printMessageEnd(): void {
-    console.log('Bye! from ConcreteImplemetor-1');
+    Logger.debug('Bye! from ConcreteImplemetor-1');
   }
 }

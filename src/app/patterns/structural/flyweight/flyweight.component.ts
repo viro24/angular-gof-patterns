@@ -1,15 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 import { Client } from './client';
-
+import { Logger } from 'src/app/app.component';
 @Component({
   selector: 'gof-flyweight',
-  template: ''
+  template: '',
 })
 export class FlyweightComponent implements OnInit {
   constructor() {
-    console.log('%cFlyweight: Use sharing to support large numbers of fine grained objects efficiently', 'color: SpringGreen;');
-    let client = new Client();
+    Logger.debug(
+      '%cFlyweight: Use sharing to support large numbers of fine grained objects efficiently',
+      'color: SpringGreen;',
+    );
+    const client = new Client();
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 }

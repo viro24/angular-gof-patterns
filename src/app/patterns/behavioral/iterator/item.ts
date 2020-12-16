@@ -1,3 +1,4 @@
+import { Logger } from 'src/app/app.component';
 export class Item {
   private nameItem: string;
   private countryItem: string;
@@ -8,6 +9,6 @@ export class Item {
   }
 
   printNameItem(): void {
-    console.log('My Name Is ' + this.nameItem + ' From ' + this.countryItem);
+    Logger.debug('My Name Is ' + this.nameItem + ' From ' + this.countryItem);
   }
 }

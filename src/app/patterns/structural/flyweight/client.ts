@@ -1,10 +1,10 @@
 import { FlyweightFactory } from './ flyweight-factory';
 import { Color } from './color';
 import { UnsharedConcreteFlyweight } from './unshared-concrete-flyweight';
-
+import { Logger } from 'src/app/app.component';
 export class Client {
   constructor() {
-    let factory = new FlyweightFactory();
+    const factory = new FlyweightFactory();
 
     let flyweight = factory.getFlyweight(Color.BLACK);
     flyweight.operation('Flyweight-1');
@@ -15,9 +15,9 @@ export class Client {
     flyweight = factory.getFlyweight(Color.BLACK);
     flyweight.operation('Already Used Flyweight-1');
 
-    let unsharedflyweight = new UnsharedConcreteFlyweight();
+    const unsharedflyweight = new UnsharedConcreteFlyweight();
     unsharedflyweight.operation('Unshared');
 
-    console.log('Before This Line 3 Flyweight Were Created');
+    Logger.debug('Before This Line 3 Flyweight Were Created');
   }
 }

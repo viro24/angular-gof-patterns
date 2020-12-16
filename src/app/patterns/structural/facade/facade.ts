@@ -3,7 +3,7 @@ import { Class2 } from './class-2';
 import { Class3 } from './class-3';
 import { Class4 } from './class-4';
 import { Class5 } from './class-5';
-
+import { Logger } from 'src/app/app.component';
 export class Facade<T> {
   private class3: Class3;
   private class4: Class4;
@@ -24,6 +24,6 @@ export class Facade<T> {
   }
 
   public constructed(): void {
-    console.log('End Of Construction');
+    Logger.debug('End Of Construction');
   }
 }

@@ -1,18 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 import { Client } from './client';
-
+import { Logger } from 'src/app/app.component';
 @Component({
   selector: 'gof-proxy',
-  template: ''
+  template: '',
 })
 export class ProxyComponent implements OnInit {
   constructor() {
-    console.log(
+    Logger.debug(
       '%cProxy: Provide a surrogate or placeholder for another object to control access to it',
-      'color: SpringGreen;'
+      'color: SpringGreen;',
     );
-    let client = new Client();
+    const client = new Client();
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 }

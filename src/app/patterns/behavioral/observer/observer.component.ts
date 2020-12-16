@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Logger } from 'src/app/app.component';
 import { ConcreteObserver1 } from './concrete-observer-1';
 import { ConcreteObserver2 } from './concrete-observer-2';
 import { ConcreteObserver3 } from './concrete-observer-3';
@@ -6,11 +7,11 @@ import { ConcreteSubject } from './concrete-subject';
 
 @Component({
   selector: 'gof-concreteObserver',
-  template: ''
+  template: '',
 })
 export class ObserverComponent implements OnInit {
   constructor() {
-    console.log(
+    Logger.debug(
       '%cObserver: Define a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically',
       'color: SpringGreen;'
     );
@@ -24,15 +25,15 @@ export class ObserverComponent implements OnInit {
     concreteSubject.attach(concreteObserver2);
     concreteSubject.attach(concreteObserver3);
 
-    console.log('Notify Reset System');
+    Logger.debug('Notify Reset System');
     concreteSubject.notify('Reset System');
 
-    console.log('End... Now Detachs... Only 1 Observable');
+    Logger.debug('End... Now Detachs... Only 1 Observable');
 
     concreteSubject.detach(concreteObserver1);
     concreteSubject.detach(concreteObserver2);
 
-    console.log('Notify End Program');
+    Logger.debug('Notify End Program');
     concreteSubject.notify('End Program');
   }
 

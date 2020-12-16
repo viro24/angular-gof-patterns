@@ -1,3 +1,4 @@
+import { Logger } from 'src/app/app.component';
 import { Abstraction } from './abstraction';
 import { Implementor } from './implementor';
 
@@ -13,6 +14,6 @@ export class ConcreteAbstraction2 extends Abstraction {
   }
 
   private showMessageRevert(): void {
-    console.log('Now... Revert');
+    Logger.debug('Now... Revert');
   }
 }

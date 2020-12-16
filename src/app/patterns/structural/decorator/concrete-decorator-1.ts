@@ -1,3 +1,4 @@
+import { Logger } from 'src/app/app.component';
 import { Component } from './component';
 import { Decorator } from './decorator';
 
@@ -8,6 +9,6 @@ export class ConcreteDecorator1 extends Decorator {
 
   public operation(): void {
     super.operation();
-    console.log('Decorator-1');
+    Logger.debug('Decorator-1');
   }
 }

@@ -1,20 +1,21 @@
 import { Component, OnInit } from '@angular/core';
+import { Logger } from 'src/app/app.component';
 import { ConcreteCreator } from './concrete-creator';
 
 @Component({
   selector: 'gof-factory-method',
-  template: ''
+  template: '',
 })
 export class FactoryMethodComponent implements OnInit {
   constructor() {
-    console.log(
+    Logger.debug(
       '%cFactory Method: Define an interface for creating an object, but let subclasses decide which class to instantiate. Lets a class defer instantiation to subclasses',
       'color: SpringGreen;'
     );
 
     let creator = new ConcreteCreator();
     let productValue: number = creator.genProductValue();
-    console.log(productValue);
+    Logger.debug(productValue);
   }
 
   ngOnInit(): void {}

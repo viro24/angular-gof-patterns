@@ -1,17 +1,19 @@
+import { Logger } from 'src/app/app.component';
+
 export class Receiver {
   public action(operation: string): void {
     switch (operation) {
       case 'save':
-        console.log('Execute Option Save');
+        Logger.debug('Execute Option Save');
         break;
       case 'load':
-        console.log('Execute Option Load');
+        Logger.debug('Execute Option Load');
         break;
       case 'run':
-        console.log('Execute Option Run');
+        Logger.debug('Execute Option Run');
         break;
       default:
-        console.log('Option invalid');
+        Logger.debug('Option invalid');
         break;
     }
   }

@@ -1,6 +1,6 @@
 import { Color } from './color';
 import { Flyweight } from './flyweight';
-
+import { Logger } from 'src/app/app.component';
 export class ConcreteFlyweight implements Flyweight {
   private intrinsicState: Color;
 
@@ -13,6 +13,8 @@ export class ConcreteFlyweight implements Flyweight {
   }
 
   public operation(extrinsicState: string) {
-    console.log(`Drawing circle with border color ${this.getIntrinsicState()} and text ${extrinsicState}`);
+    Logger.debug(
+      `Drawing circle with border color ${this.getIntrinsicState()} and text ${extrinsicState}`,
+    );
   }
 }

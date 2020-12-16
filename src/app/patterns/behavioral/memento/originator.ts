@@ -1,10 +1,11 @@
+import { Logger } from 'src/app/app.component';
 import { Memento } from './memento';
 
 export class Originator {
   private name: string;
 
   public saveToMemento(): Memento {
-    console.log('Save Memento... ' + this.name);
+    Logger.debug('Save Memento... ' + this.name);
     return new Memento(this.name);
   }
 

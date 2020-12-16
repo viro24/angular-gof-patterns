@@ -1,14 +1,15 @@
 import { Component, OnInit } from '@angular/core';
+import { Logger } from 'src/app/app.component';
 import { Composite } from './composite';
 import { Leaf } from './leaf';
 
 @Component({
   selector: 'gof-composite',
-  template: ''
+  template: '',
 })
 export class CompositeComponent implements OnInit {
   constructor() {
-    console.log(
+    Logger.debug(
       '%cComposite: Compose objects into tree structures to represent part-whole-depth hierarchies. Lets clients treat individual objects and compositions of objects uniformly',
       'color: SpringGreen;'
     );
@@ -25,12 +26,12 @@ export class CompositeComponent implements OnInit {
     folder1.addNode(folder2);
     folder1.addNode(new Leaf('File-6.txt'));
 
-    console.log('Show Folder-1...');
+    Logger.debug('Show Folder-1...');
     folder1.show();
-    console.log('Show Folder-2...');
+    Logger.debug('Show Folder-2...');
     folder2.show();
 
-    console.log('Again Show Folder-1...');
+    Logger.debug('Again Show Folder-1...');
     folder1.removeNode(folder2);
     folder1.show();
   }

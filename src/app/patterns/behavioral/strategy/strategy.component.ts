@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Logger } from 'src/app/app.component';
 import { ConcreteStrategy1 } from './concrete-strategy-1';
 import { ConcreteStrategy2 } from './concrete-strategy-2';
 import { ConcreteStrategy3 } from './concrete-strategy-3';
@@ -7,11 +8,11 @@ import { Element } from './element';
 
 @Component({
   selector: 'gof-strategy',
-  template: ''
+  template: '',
 })
 export class StrategyComponent implements OnInit {
   constructor() {
-    console.log(
+    Logger.debug(
       '%cStrategy: Define a family of algorithms, encapsulate each one, and make them interchangeable. Lets the algorithm vary independently from clients that use it',
       'color: SpringGreen;'
     );
@@ -26,11 +27,11 @@ export class StrategyComponent implements OnInit {
     let context_2 = new Context(concreteStrategy2);
     let context_3 = new Context(concreteStrategy3);
 
-    console.log(context_1.executeStrategy(element1));
-    console.log(context_2.executeStrategy(element1));
-    console.log(context_3.executeStrategy(element1));
+    Logger.debug(context_1.executeStrategy(element1));
+    Logger.debug(context_2.executeStrategy(element1));
+    Logger.debug(context_3.executeStrategy(element1));
 
-    console.log(context_2.executeStrategy(element2));
+    Logger.debug(context_2.executeStrategy(element2));
   }
 
   ngOnInit(): void {}

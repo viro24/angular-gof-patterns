@@ -1,3 +1,4 @@
+import { Logger } from 'src/app/app.component';
 import { AbstractProduct } from './abstract-product';
 
 export class CreateProductB implements AbstractProduct {
@@ -8,6 +9,6 @@ export class CreateProductB implements AbstractProduct {
   }
 
   public showName(): void {
-    console.log(this.nameProduct);
+    Logger.debug(this.nameProduct);
   }
 }

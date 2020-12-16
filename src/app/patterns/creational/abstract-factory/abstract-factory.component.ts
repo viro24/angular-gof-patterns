@@ -1,13 +1,14 @@
 import { Component, OnInit } from '@angular/core';
+import { Logger } from 'src/app/app.component';
 import { Client } from './client';
 
 @Component({
   selector: 'gof-abstract-factory-class',
-  template: ''
+  template: '',
 })
 export class AbstractFactoryComponent implements OnInit {
   constructor() {
-    console.log(
+    Logger.debug(
       '%cAbstract Factory: Provides an interface for creating families of related or dependent objects without specifying their concrete class',
       'color: SpringGreen;'
     );

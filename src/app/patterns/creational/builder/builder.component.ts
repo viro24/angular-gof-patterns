@@ -1,27 +1,27 @@
 import { Component, OnInit } from '@angular/core';
 import { ConcreteBuilder } from './concrete-builder';
 import { Director } from './director';
-
+import { Logger } from 'src/app/app.component';
 @Component({
   selector: 'gof-builder',
-  template: ''
+  template: '',
 })
 export class BuilderComponent implements OnInit {
   constructor() {
-    console.log(
+    Logger.debug(
       '%cBuilder: Separate the construction of a complex object from its representing so that the same construction process can create different representations',
-      'color: SpringGreen;'
+      'color: SpringGreen;',
     );
 
-    let builder = new ConcreteBuilder();
-    let director = new Director(builder);
+    const builder = new ConcreteBuilder();
+    const director = new Director(builder);
 
     director.construct();
-    let product = builder.getResult();
+    const product = builder.getResult();
 
-    console.log('Created Complex Object');
-    console.log(product);
+    Logger.debug('Created Complex Object');
+    Logger.debug(product);
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 }

@@ -1,5 +1,5 @@
 import { Component } from './component';
-
+import { Logger } from 'src/app/app.component';
 export class Composite extends Component {
   private savedNodes: Array<Component> = [];
 
@@ -14,11 +14,11 @@ export class Composite extends Component {
   }
 
   public removeNode(node: Component): void {
-    this.savedNodes = this.savedNodes.filter(item => item !== node);
+    this.savedNodes = this.savedNodes.filter((item) => item !== node);
   }
 
   public show(): void {
-    console.log('Folder ' + this.getName());
-    this.savedNodes.map(nodes => nodes.show());
+    Logger.debug('Folder ' + this.getName());
+    this.savedNodes.map((nodes) => nodes.show());
   }
 }

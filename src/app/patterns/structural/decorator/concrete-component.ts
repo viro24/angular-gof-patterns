@@ -1,7 +1,7 @@
 import { Component } from './component';
-
+import { Logger } from 'src/app/app.component';
 export class ConcreteComponent implements Component {
   public operation(): void {
-    console.log('Concrete Component');
+    Logger.debug('Concrete Component');
   }
 }

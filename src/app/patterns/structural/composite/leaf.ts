@@ -1,3 +1,4 @@
+import { Logger } from 'src/app/app.component';
 import { Component } from './component';
 
 export class Leaf extends Component {
@@ -7,6 +8,6 @@ export class Leaf extends Component {
     this.setTypeNode('FILE');
   }
   public show(): void {
-    console.log('File ' + this.getName());
+    Logger.debug('File ' + this.getName());
   }
 }

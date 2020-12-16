@@ -1,14 +1,15 @@
 import { Component, OnInit } from '@angular/core';
+import { Logger } from 'src/app/app.component';
 import { Caretaker } from './caretaker';
 import { Originator } from './originator';
 
 @Component({
   selector: 'gof-memento',
-  template: ''
+  template: '',
 })
 export class MementoComponent implements OnInit {
   constructor() {
-    console.log(
+    Logger.debug(
       "%cMemento: Without violating encapsulation, capture and externalize an object's internal state so that the object can be restored to this state later",
       'color: SpringGreen;'
     );
@@ -27,12 +28,12 @@ export class MementoComponent implements OnInit {
     let memento_0 = caretaker.getMemento(0);
     let memento_1 = caretaker.getMemento(1);
 
-    console.log(originator);
-    console.log(memento_0.getSavedState());
-    console.log(memento_1.getSavedState());
+    Logger.debug(originator);
+    Logger.debug(memento_0.getSavedState());
+    Logger.debug(memento_1.getSavedState());
 
     originator.restoreFromMemento(memento_0);
-    console.log(originator);
+    Logger.debug(originator);
   }
 
   ngOnInit(): void {}

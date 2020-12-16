@@ -1,7 +1,15 @@
+<div style="position: sticky; top: 0; background-color: lightskyblue">
+  <h3>Log:</h3>
+  <pre>{{ consoleResult | async | json }}</pre>
+</div>
+
 <h1>Angular Architecture Patterns</h1>
-<hr/>
+<hr />
 <h2>Behavioral Patterns</h2>
-<p>Most of these design patterns are specifically concerned with communication between objects.</p>
+<p>
+  Most of these design patterns are specifically concerned with communication
+  between objects.
+</p>
 <h3>Composition · Object</h3>
 <p><a routerLink="/chain-of-responsability">Chain of responsability</a></p>
 <p><a routerLink="/command">Command</a></p>
@@ -17,10 +25,13 @@
 <p><a routerLink="/interpreter">Interpreter</a></p>
 <p><a routerLink="/template-method">Template Method</a></p>
 
-<hr/>
+<hr />
 
 <h2>Structural Patterns</h2>
-<p>These concern class and object composition. They use inheritance to compose interfaces and define ways to compose objects to obtain new functionality.</p>
+<p>
+  These concern class and object composition. They use inheritance to compose
+  interfaces and define ways to compose objects to obtain new functionality.
+</p>
 <h3>Composition · Object</h3>
 <p><a routerLink="/object/adapter">Adapter</a></p>
 <p><a routerLink="/bridge">Bridge</a></p>
@@ -28,20 +39,30 @@
 <p><a routerLink="/decorator">Decorator</a></p>
 <p><a routerLink="/facade">Facade</a></p>
 <p><a routerLink="/flyweight">Flyweight</a></p>
-<p>Proxy <a routerLink="/proxy/default">default</a> & <a routerLink="/proxy/reverse">reverse</a></p>
+<p>
+  Proxy <a routerLink="/proxy/default">default</a> &
+  <a routerLink="/proxy/reverse">reverse</a>
+</p>
 
 <h3>Inheritance · Class</h3>
 <p><a routerLink="/class/adapter">Adapter</a></p>
 
-<hr/>
+<hr />
 
 <h2>Creational Patterns</h2>
-<p>Creational patterns are ones that create objects, rather than having to instantiate objects directly. This gives the program more flexibility in deciding which objects need to be created for a given case.</p>
+<p>
+  Creational patterns are ones that create objects, rather than having to
+  instantiate objects directly. This gives the program more flexibility in
+  deciding which objects need to be created for a given case.
+</p>
 <h3>Composition · Object</h3>
 <p><a routerLink="/abstract-factory">Abstract Factory</a></p>
 <p><a routerLink="/builder">Builder</a></p>
 <p><a routerLink="/prototype">Prototype</a></p>
-<p>Singleton <a routerLink="/singleton/default">default</a> & <a routerLink="/singleton/lazy-initialization">lazy initialization</a> </p>
+<p>
+  Singleton <a routerLink="/singleton/default">default</a> &
+  <a routerLink="/singleton/lazy-initialization">lazy initialization</a>
+</p>
 
 <h3>Inheritance · Class</h3>
 <p><a routerLink="/factory-method">Factory Method</a></p>

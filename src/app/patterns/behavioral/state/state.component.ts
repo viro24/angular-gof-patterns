@@ -1,15 +1,16 @@
 import { Component, OnInit } from '@angular/core';
+import { Logger } from 'src/app/app.component';
 import { ConcreteState1 } from './concrete-state-1';
 import { ConcreteState2 } from './concrete-state-2';
 import { Context } from './context';
 
 @Component({
   selector: 'gof-state',
-  template: ''
+  template: '',
 })
 export class StateComponent implements OnInit {
   constructor() {
-    console.log(
+    Logger.debug(
       '%cState: Allow an object to alter its behavior when its internal state changes. The object will appear to change its class',
       'color: SpringGreen;'
     );
@@ -24,8 +25,8 @@ export class StateComponent implements OnInit {
     context.setState(state2);
     context.request();
 
-    console.log('Get state...');
-    console.log(context.getState());
+    Logger.debug('Get state...');
+    Logger.debug(context.getState());
   }
 
   ngOnInit(): void {}

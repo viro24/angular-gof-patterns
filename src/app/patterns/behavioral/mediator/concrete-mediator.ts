@@ -1,6 +1,6 @@
 import { ConcreteColleague } from './concrete-colleague';
 import { Mediator } from './mediator';
-
+import { Logger } from 'src/app/app.component';
 export class ConcreteMediator implements Mediator {
   private collectionColleague: Array<ConcreteColleague> = [];
 
@@ -10,13 +10,17 @@ export class ConcreteMediator implements Mediator {
 
   sendMessage(from: string, to: string, message: string): void {
     if (
-      this.collectionColleague.find(colleague => colleague.getName() === to) &&
-      this.collectionColleague.find(colleague => colleague.getName() === from)
+      this.collectionColleague.find(
+        (colleague) => colleague.getName() === to,
+      ) &&
+      this.collectionColleague.find((colleague) => colleague.getName() === from)
     ) {
-      let colleagueFind = this.collectionColleague.find(colleague => colleague.getName() === to);
+      const colleagueFind = this.collectionColleague.find(
+        (colleague) => colleague.getName() === to,
+      );
       colleagueFind.receiverMessage(from, message);
     } else {
-      console.log('No Exist!');
+      Logger.debug('No Exist!');
     }
   }
 }
